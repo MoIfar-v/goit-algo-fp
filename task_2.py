@@ -3,7 +3,7 @@ import math
 
 
 def square_vertices(x: float, y: float, size: float, heading: float):
-    """Повертає список з 4 комплексних чисел - вершин квадрата."""
+    """Повертає список з 4 комплексних чисел - вершин квадрата"""
     ang = math.radians(heading)
     v = complex(math.cos(ang), math.sin(ang)) * size
     p0 = complex(x, y)
@@ -14,7 +14,7 @@ def square_vertices(x: float, y: float, size: float, heading: float):
 
 
 def draw_filled_square(t: turtle.Turtle, pts: list[complex]):
-    """Малює контур квадрата."""
+    """Малює контур квадрата"""
     t.penup()
     t.goto(pts[0].real, pts[0].imag)
     t.pendown()
@@ -24,7 +24,7 @@ def draw_filled_square(t: turtle.Turtle, pts: list[complex]):
 
 
 def pythagor_tree(t: turtle.Turtle, x: float, y: float, size: float, heading: float, depth: int, angle_deg: float):
-    """Малює дерево Піфагора."""
+    """Малює дерево Піфагора"""
     if depth < 0 or size <= 0:
         return
 
