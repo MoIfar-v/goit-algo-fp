@@ -1,4 +1,3 @@
-
 def greedy_algorithm(items, budget):
     # Обчислити коефіцієнт калорійності за одиницю вартості
     ranked = sorted(items.items(), key=lambda kv: (kv[1]['calories'] / kv[1]['cost']), reverse=True)
